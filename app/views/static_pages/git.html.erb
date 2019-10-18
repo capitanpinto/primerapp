@@ -1,5 +1,48 @@
 <% provide(:title, "Git") %>
 <h1>Git</h1>
-<p>
-Estos son los conceptos basicos de git
-</p>
+<h7>Lista de commandos para realizar acciones git </h7>
+<p> </p>
+<div class="container">
+<h9><strong>
+Inicialización de un repositorio de git nuevo en una aplicación existente
+</strong></h9>
+<p> $git init </p>
+<h9><strong>
+Creación de un branch nuevo
+</strong></h9>
+<p> $git checkout -b nombre_branch </p>
+<h9><strong>
+Realizar un commit incluyendo todos los cambios actuales
+</strong></h9>
+<p> $git commit -am "mensaje" </p>
+<h9><strong>
+Enviar el código al repositorio remoto
+</strong></h9>
+<p> $git push </p>
+<h9><strong>
+Cómo configurar el origen del repositorio remoto para evitar escribirlo siempre cada vez que se hace un push o un pull
+</strong></h9>
+<p> $git push -u origin master </p>
+<h8><strong>
+Diferencia entre un reset y revert
+</strong></h8>
+<p> Un reset deshace cambios que no se han llevado a commit, un revert deshace el commit anterior </p>
+<h8><strong>
+Además de cambiar de ramas, para qué más se puede utilizar el comando git checkout
+</strong></h8>
+<p> La accion checkout tambien puede usarse para cambiar o eliminar los contenidos de una rama </p>
+<h9><strong>
+Como puede ver los commits que se han realizado en el proyecto
+</strong></h9>
+<p> $git log </p>
+<h10><strong>
+He modificado dos archivos y quiero hacer un commit por cada uno de ellos, cómo lo puedo hacer?
+</strong></h10>
+<p> $git add archivo1</p>
+<p>$git commit -m "mensaje1"</p>
+<p>$git push</p>
+<p> $git add archivo2</p>
+<p>$git commit -m "mensaje2"</p>
+<p>$git push</p>
+
+</div>
